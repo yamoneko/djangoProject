@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .
+        {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+
+        }
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f6f6f6;
+        }
+        .form-wrap
+        {
+            width: 320px;
+            background: #79aec8;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+        h1
+        {
+            text-align: center;
+            color: #003366;pyth
+
+        }
+        .box
+        {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="from-wrap">
+    <form class="bbx" action="insert/" method="post">
+        {% csrf_token %}
+        <h1>To do list</h1>
+        <input type="text" name="name"  placeholder="Enter your name">
+        <input type="text" name="ph" placeholder="Enter your ph number">
+        <input type="text" name="password" placeholder="Enter your password">
+        <input type="submit" name="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

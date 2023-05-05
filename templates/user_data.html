@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .
+        {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+
+        }
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f6f6f6;
+        }
+        .box
+        {
+            width: 300px;
+        }
+        .box h1
+        {
+            color: #fff;
+            background: #03a9f4;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-width: 700;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .box ul
+        {
+            position: relative;
+            background: #fff;
+        }
+        .box li
+        {
+            padding: 30px;
+            background: #fff;
+            box-shadow: 0 5px 25px rgba(0,0,0,.1);
+            transition: transform 0.5s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Your enter data</h1>
+        <ul>
+            <li>{{ name }}</li>
+            <li>{{ ph_no}}</li>
+            <li>{{ password }}</li>
+        </ul>
+    </div>
+</body>
+</html>
